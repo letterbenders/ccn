@@ -1,0 +1,313 @@
+/* Placeholders */
+
+%medium__text{
+	color:#fff;
+	text-transform: none;
+	background: url(../../dist/img/quote.svg) no-repeat top left;
+	background-size:20px auto;
+	padding-top: 16px;
+}
+
+%text__author{
+	color: $green !important;
+	background: none!important;
+	text-transform: uppercase !important;
+	padding-top: 0;
+}
+
+
+/* Objects */
+
+.hero{
+	
+	/*margin-top:35px;*/
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom:0px;
+	text-align: center;
+	overflow:hidden;
+	
+	&__container{
+		position:relative;
+	}
+
+	&__image{
+
+		img{
+			left:50%;
+			margin-left:50%;
+   			transform: translateX(-50%);
+   			-webkit-transform: translateX(-50%);
+   			-ms-transform: translateX(-50%);
+   			width:290%;
+		}
+	}
+	
+	&__text{
+		position: absolute;
+		top:50%;
+		left:50%;
+		transform: translate(-50%, -50%);
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		width:90%;
+
+
+		p{
+			color:#fff;
+			text-transform: uppercase;
+			margin: 30px 0 0 0;
+			padding: 0;
+			font-size:90%;
+			font-family: 'Roboto Slab', serif;
+			font-weight: 300 !important;
+		}
+		
+		.light{
+			background: rgba(88, 145, 155, .5);
+			padding:40px;
+		}
+
+		.dark{
+			color: $black;
+		}
+
+		p:first-child{
+			margin:0;
+		}
+
+		.client__quote{
+			@extend %text__author;
+			margin-top: 20px;
+			font-size:80%;
+		}
+
+		.readmore{
+			margin-top:20px;
+
+			&__label{
+				font-size:80%;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+
+.hero--animated{
+	.hero__image{
+		img{
+			@include transition-animate;
+		}
+	}
+	&:hover{	
+		img{
+			opacity: 0.8;
+		}	
+	}
+}
+
+.hero__transparent{
+
+	background: #589198;
+
+		img{
+			@extend .transparency;
+		}
+
+		.hero__text{
+			width:80%;
+		}
+}
+
+/*** hero frontpage ***/
+
+.hero__frontpage{
+
+	.stroke-button{
+		margin-top: 35px
+	}
+}
+
+/*** hero quote ***/
+
+.hero__quote{
+	
+	text-align: left;
+	text-align:center;
+	
+	.hero__text{
+
+		p{
+			@extend %medium__text;
+			font-size:80%;
+			padding-left:10px;
+		}
+
+		.client__quote{
+			@extend %text__author;
+			font-family: 'Lato', sans-serif;
+
+		}
+
+		.readmore{
+			margin-top:30px;
+		}
+	}
+	
+}
+
+/*** hero divider ***/
+
+.hero__divider{
+	.hero__text{
+
+		p{
+			@extend %medium__text;
+			font-size:70%;
+		}
+
+		.client__quote{
+			@extend %text__author;
+			margin-top: 10px;
+			font-family: 'Lato', sans-serif;
+
+		}
+
+		.readmore{
+			margin-top:15px;
+		}
+	}
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+
+	.hero{
+
+		&__image{
+
+			img{
+				margin-left:50%;
+	   			transform: translateX(-50%);
+	   			width:auto;
+			}
+		}
+
+		&__text{
+			width:650px;
+
+			p{
+				font-size:34px;
+			}
+
+			.readmore{
+
+				&__label{
+					font-size:18px;
+				}
+			}
+
+			.client__quote{
+				margin-top: 50px;
+				font-size:18px !important;
+
+			}
+		}
+ 	}
+
+ 	.hero__quote{
+ 		.hero__text{
+ 			p{
+ 				font-size:34px;
+ 				padding-left:30px;
+ 				background: url(../img/quote_right.svg) no-repeat bottom right, url(../img/quote.svg) no-repeat top left;
+				background-size:30px auto;
+ 			}
+
+ 			.client__quote{
+				margin-top: 50px;
+			}
+ 		}
+ 	}
+
+ 	.hero__divider{
+ 		.hero__text{
+
+ 			p{
+ 				font-size:26px;
+ 				padding-left:30px;
+
+ 			}
+
+ 			.client__quote{
+				margin-top: 20px;
+				font-size:16px !important;
+			}
+ 		}
+ 	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {
+	
+	.hero{
+		margin-bottom:50px;
+
+		&__text{
+			width:900px;
+				
+			p{
+				font-size:43px;
+				line-height: 130%;
+			}
+		}
+ 	}
+
+ 	.hero__quote{
+ 		.hero__text{
+ 			p{
+ 				font-size:34px;
+ 				padding-left:15px;
+ 			}
+
+ 			.client__quote{
+				font-size:21px;
+			}
+ 		}
+ 	}
+	
+	.hero__divider{
+ 		.hero__text{
+
+ 			p{
+ 				font-size:34px;
+ 			}
+
+ 			.client__quote{
+				font-size:18px !important;
+			}
+ 		}
+ 	}
+
+ 	.hero__transparent{
+ 		.hero__text{
+ 			p{
+ 				font-size:34px;
+ 			}
+ 		}
+ 	}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
+
+	.hero{
+		margin-bottom:50px;
+
+		&__text{
+			width:970px;
+		
+		}
+ 	}
+
+}

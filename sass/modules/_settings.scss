@@ -1,0 +1,38 @@
+body{
+	font-size:16px;
+	font-family: 'Lato', sans-serif;
+	color: $dark-grey;
+}
+
+
+// Headers
+
+h1, h2, h3, h4, h5, h6{
+	font-family:'Lato', sans-serif;
+	color: $black;
+}
+
+h4{
+	font-size:21px;
+}
+
+h5{
+	font-size:16px;
+}
+
+h6{
+	font-size:14px;
+}
+
+p{
+	margin: 15px 0;
+	font-weight:300;
+}
+
+li{
+	font-weight:300;
+}
+
+a{
+	font-weight:400;
+}

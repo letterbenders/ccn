@@ -1,0 +1,43 @@
+.page-content{
+.content {
+	display:none;
+	margin-bottom: 10px;
+}
+
+.expander{
+	color: $green;
+
+	&:hover{
+		text-decoration: none;
+		color: $green;
+	}
+
+	&:focus{
+		text-decoration: none;	
+		color: $green;
+	}
+}
+
+
+.expanded{
+	color: $green;
+	&:after{
+		content:'mindre';
+		display: inline-block;
+		margin-left:3px;
+		color: $green;
+
+	}
+}
+
+.collapsed{
+	color: $green;
+	&:after{
+		content:'mere';
+		display: inline-block;
+		margin-left:3px;
+		color: $green;
+	}
+}
+
+}

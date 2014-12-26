@@ -1,0 +1,55 @@
+#listing{
+	.listing__items{
+		&__item{
+			.image{
+				img{
+					width:100%;
+				}
+			}
+			hr{
+				width: 50%;
+				/*border-top:1px solid $light-grey;*/
+				float:left;
+			
+			}
+
+			.desc{
+				font-size:15px;
+			}
+
+			.contact{
+				margin-top: 30px;
+
+				.email{
+					color: $dark-grey;
+					font-size:110%;
+
+					&:hover{
+						@include transition-animate;
+						color: $green;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+	#listing{
+		margin-top: 50px;
+	}
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {
+	
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
+	
+}

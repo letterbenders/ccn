@@ -1,0 +1,100 @@
+.stroke-button{
+	display:inline-block;
+	border:2px solid #fff;
+	padding:8px 16px;
+	
+
+	&__label{
+		text-transform: uppercase;
+		font-size:100%;
+
+		&--white{
+			color:#fff;
+		}
+
+		&:after{
+			display:inline-block;
+			background:url(../img/stroke_button_arrow.svg) no-repeat 0 2px;
+			background-size:16px 14px;
+			content: 'arr';
+			line-height: 16px;
+			height:16px;
+			width:14px;
+			margin-left:8px;
+			text-indent: -9999px;
+		}
+	}
+
+	&:hover{
+		text-decoration: none;
+	}
+}
+
+.readmore{
+	
+	display:inline-block;
+
+	&__label{
+		color:$green;
+		font-size: 120%;
+		
+
+		&:after{
+			display:inline-block;
+			background:url(../img/link_arrow.svg) no-repeat 0 2px;
+			content: 'arr';
+			line-height: 15px;
+			height:15px;
+			width:13px;
+			margin-left:6px;
+			text-indent: -9999px;
+
+			@include transition-animate;
+		}
+
+		&:hover{
+			
+			&:after{
+				margin-left: 12px;
+			}
+		}		
+	}
+
+	&:hover{
+		text-decoration: none;
+	}
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+	
+	.stroke-button{
+		padding:16px 32px;
+		
+
+		&__label{
+	
+			font-size:130%;
+
+
+			&:after{
+				background:url(../img/stroke_button_arrow.svg) no-repeat 0 2px;
+				background-size:28px 24px;
+				line-height: 28px;
+				height:28px;
+				width:24px;
+				margin-left:12px;
+			}
+		}
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
+
+}

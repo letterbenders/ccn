@@ -1,0 +1,46 @@
+.aside{
+	
+	margin:0;
+	padding: 0;
+	list-style-type:none;
+
+	li{
+		margin-top: 30px;
+	}
+
+	li:first-child{
+		margin-top: 0px;
+	}
+
+	.image{
+		img{
+			width: 100%;
+		}
+	}
+
+	.box{
+		background: $light-grey;
+	}
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+	.aside{
+		li{
+			margin-top: 60px;
+		} 
+	}
+
+
+	
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {
+	
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
+	
+}

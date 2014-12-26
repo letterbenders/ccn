@@ -1,0 +1,64 @@
+#grid{
+	
+	.grid__item{
+		text-align: center;
+		margin: 20px 0 40px;
+
+		.image{
+			
+			margin-bottom: 0px !important;
+
+			img{
+				width: 100%;
+			}
+		}
+
+		.info{
+			background: $light-grey;
+			padding: 25px 0;
+
+			a{	
+				@include transition-animate;
+				&h4:hover, &:hover{
+					color:$green;
+					text-decoration: none;
+				}
+			}
+
+			.name{
+				text-transform: uppercase;
+				margin:0 0 20px 0;
+			}
+
+			.title{
+				margin-bottom:0;
+			}
+			
+			.location{
+				margin-top:5px;
+			}
+
+			.email{
+				font-weight: bold;
+				color: $dark-grey;
+				@include transition-animate;
+
+				&:hover{
+					color: $green;
+					text-decoration: none;
+				}
+			}
+
+			.phone, .phone a{
+				color: $green;
+			}
+
+			hr{
+				border-top:2px solid $green;
+				width:50%;
+				margin: 0 auto;
+			}
+		}
+	}
+	
+}

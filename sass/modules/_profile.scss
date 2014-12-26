@@ -1,0 +1,98 @@
+#profile{
+	
+	padding-bottom:0;
+
+	img{
+		width: 100%;
+	}
+
+	.name{
+			text-transform: uppercase;
+		}
+	
+	.role{
+
+	}
+
+	.email{
+			
+
+		a{
+			color: $green;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+
+	}	
+
+	.phone, .linkedin, .web{
+	
+		a{
+			color: $dark-grey;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+
+	}	
+	
+	.profile__info{
+		
+		.image{
+			
+			margin: 0;
+			max-height: 320px;
+			overflow: hidden;
+
+			img{
+
+			}
+		}
+
+		.contact{
+			background: $light-grey;
+			height:248px;
+
+			.list__contact__profile{
+				@include vertical-align;
+
+			}
+		}
+
+		.profile__content{
+			margin-top:20px;
+		}	
+	}
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+	#profile{
+		
+		.profile__info{
+
+			.contact{
+				height:248px;
+			}
+		}
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {
+	#profile{
+		
+		.profile__info{
+
+			.contact{
+				height:320px;
+			}
+		}
+	}
+}	
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
+	
+}

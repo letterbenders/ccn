@@ -1,0 +1,225 @@
+$section-padding:20px;
+
+section{
+	padding-top:$section-padding;
+	padding-bottom:0px;
+
+	.row{
+		/*border-bottom:1px solid $gray-lighter;
+		padding-bottom:$section-padding;*/
+	}
+}
+
+// modifyers
+
+.no-padding{
+	padding:0px !important;
+}
+
+.no-padding-top{
+	padding-top:0px !important;
+}
+
+.no-padding-bottom{
+	padding-bottom:0px !important;
+}
+
+.no-margin{
+    margin:0px !important;
+}
+
+.no-margin-top{
+    margin-top:0px !important;
+}
+
+.no-margin-bottom{
+    margin-bottom:0px !important;
+}
+
+// classes
+
+.uppercase{
+	text-transform:uppercase;
+}
+
+.green{
+    color:$green;
+}
+
+.top__line{
+    margin:0;
+    border-top: 1px solid $dark-grey;
+}
+
+.transparency{
+    opacity: 0.5;
+
+    img{
+        opacity: 0.5;
+    }
+}
+
+.spaced{
+    margin-top: 30px;
+}
+
+.legend-header{
+    h3 {
+        text-align: center;
+        text-transform: uppercase;
+        display: block;
+        width: 100%;
+        font-size:30px;
+    }
+    h3 > span, h3:before, h3:after {
+        display: block;
+    }
+    h3:before, h3:after {
+        background: none;
+        width: 100%;
+        content: ' ';
+    }
+    h3 > span {
+        white-space: normal;
+        padding: 0 20px;
+    }
+}
+
+.alignright{
+    float:right;
+}
+
+.alignleft{
+    float:left;
+}
+
+
+// vertical alignment styles
+
+.col-top {
+    vertical-align:top;
+}
+.col-middle {
+    vertical-align:middle;
+}
+.col-bottom {
+    vertical-align:bottom;
+}
+
+/* fix firefox responsive images */
+.img-responsive {
+    width: 100%
+}
+
+.img-max-width{
+    max-width:100%;
+}
+
+
+/* columns of same height styles */
+.container-xs-height {
+    display:table;
+    padding-left:0px;
+    padding-right:0px;
+}
+.row-xs-height {
+    display:table-row;
+}
+.col-xs-height {
+    display:table-cell;
+    float:none;
+}
+@media (min-width: 768px) {
+    .container-sm-height {
+        display:table;
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .row-sm-height {
+        display:table-row;
+    }
+    .col-sm-height {
+        display:table-cell;
+        float:none;
+    }
+}
+@media (min-width: 992px) {
+    .container-md-height {
+        display:table;
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .row-md-height {
+        display:table-row;
+    }
+    .col-md-height {
+        display:table-cell;
+        float:none;
+    }
+}
+@media (min-width: 1200px) {
+    .container-lg-height {
+        display:table;
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .row-lg-height {
+        display:table-row;
+    }
+    .col-lg-height {
+        display:table-cell;
+        float:none;
+    }
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+	
+	section{
+		$section-padding:20px;
+		padding-top:$section-padding;
+		padding-bottom:$section-padding;
+
+		.row{
+			border-bottom:none;
+			padding-bottom:0px;
+		}
+	}
+
+    .spaced{
+        margin-top: 150px;
+    }
+
+    .legend-header{
+    h3 {
+        text-align: center;
+        text-transform: uppercase;
+        display: table;
+        width: 100%;
+    }
+    h3 > span, h3:before, h3:after {
+        display: table-cell;
+    }
+    h3:before, h3:after {
+        background: url(../../dist/img/legend_line.jpg) repeat-x center;
+        width: 50%;
+        content: ' ';
+    }
+    h3 > span {
+        white-space: nowrap;
+        padding: 0 20px;
+    }
+}
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
+
+}

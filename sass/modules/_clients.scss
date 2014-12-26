@@ -1,0 +1,38 @@
+#clients{
+	padding:70px 0 70px;
+
+	img{
+		width: 100%;
+	}
+	
+	.clients__logo{
+		margin:5px 0;
+	}
+
+	.clients__text{
+		text-align: center;
+		width:100%;
+		margin:70px auto 0;
+		color:$dark-grey;
+	}
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+	
+	#clients{
+		.clients__text{
+			width:60%;
+		}
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {
+	
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
+	
+}

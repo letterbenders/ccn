@@ -1,0 +1,26 @@
+#content-right-aside{
+	.imagery{
+		img{
+			max-width: 100%;
+			margin:0;
+		}
+		
+		margin-bottom:40px;
+	}
+
+	h4.content-header{
+		border-bottom:1px solid $dark-grey;
+		padding-bottom: 30px;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin-bottom:30px;
+		line-height: inherit;
+	}
+
+	aside{
+		background: $light-grey;
+		margin-top:15px;
+		width:100%;
+		padding:40px;
+	}	
+}
