@@ -20,7 +20,7 @@
 									<h4 class="name"><?php the_sub_field('item_name'); ?></h4>
 									<p class="desc"><?php the_sub_field('item_content'); ?> <a class="expander" href="#">Læs</a></p>
 									<div class="content">
-									   <?php the_sub_field('item_content_collapsed'); ?> 
+									   <p><?php the_sub_field('item_content_collapsed'); ?></p>
 									 </div>
 									<div class="row">
 										<div class="contact">

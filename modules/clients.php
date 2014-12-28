@@ -8,7 +8,7 @@
 						<img src="<?php the_field('footer_logos'); ?>">
 					<?php } 
 					else{ ?>
-						<img src="<?php bloginfo('template_directory')?>/dist/img/footer_logos.png">
+						<img src="<?php bloginfo('template_directory')?>/assets/img/footer_logos.png">
 					<?php }
 
 					?>
