@@ -13,6 +13,7 @@
 						<img src="<?php bloginfo('template_directory')?>/assets/img/linkedin.svg" alt="">
 					</a>
 				</p>
+				<p class="copyright">Copyright © <?php echo date("Y"); ?></p>
 			</div>
 		</div>
 	</div>
