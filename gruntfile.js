@@ -86,5 +86,6 @@ module.exports = function(grunt){
 	grunt.loadNpmTasks('grunt-contrib-copy');
 
 	grunt.registerTask('default', ['watch']);
+	grunt.registerTask('build', ['copy']);
 	
 } //exports

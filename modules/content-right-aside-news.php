@@ -1,4 +1,4 @@
-<section id="content-right-aside">
+<section id="content-right-aside" class="no-padding">
 	<div class="container">
 		<div class="row">
 			<div class="page-content">
@@ -7,7 +7,7 @@
 						<div id="content" class="widecolumn" role="main">
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 								
-								<p class="imagery">
+								<p class="imagery no-margin-top">
 									<img src="<?php the_field('post_image'); ?>" alt="">	
 								</p>
 								<h4 class="content-header"><?php the_title(); ?></h4>
@@ -17,7 +17,7 @@
 					</article><!-- page-body -->
 				</div>
 				<div class="col-md-4">
-					<aside>
+					<aside class="no-margin-top">
 						<ul class="list__right__aside">
 							<li>
 								<h5 class="header">Nyheder med holdning</h5>

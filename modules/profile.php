@@ -6,8 +6,7 @@
 					<?php the_breadcrumb(); ?>
 				</div>
 				<div class="col-md-12">
-					<h3 class="name"><?php the_title(); ?></h3>
-					<p class="role"><?php the_field('title'); ?></p>
+					<br><br>
 				</div>
 		</div><!-- /row -->
 		<div class="row">
@@ -21,9 +20,18 @@
 				<div class="col-sm-6">
 					<div class="contact">
 						<ul class="list__contact list__contact__profile">
-							<li class="phone no-margin-top">
+							<li class="no-margin">
 								<ul>
-									<li class="icon no-margin-top">
+									<li class="no-margin">
+										<h4 class="name"><?php the_title(); ?></h4>
+										<p class="role"><?php the_field('title'); ?></p>
+										<br>
+									</li>
+								</ul>
+							</li>
+							<li class="phone">
+								<ul>
+									<li class="icon">
 										<i class="fa fa-phone"></i>
 									</li>
 									<li>
@@ -44,21 +52,21 @@
 							<li class="web">
 								<ul>
 									<li class="icon">
-										<img src="<?php bloginfo('template_directory')?>/dist/img/web_icon.svg" alt="">
+										<img src="<?php bloginfo('template_directory')?>/assets/img/web_icon.svg" alt="">
 									</li>
-									<li>
+									<li class="no-margin-top">
 										<a href="<?php the_field('website'); ?>" target="_blank"><?php the_field('website'); ?></a>
 									</li>
 								</ul>
 							</li>
-							<hr>
+							<!--<hr>-->
 							<li class="linkedin no-margin-top">
 								<ul>
 									<li class="linkedin icon no-margin-top">
-										<img src="<?php bloginfo('template_directory')?>/dist/img/linkedin_grey.svg" alt="">
+										<!--<img src="<?php bloginfo('template_directory')?>/assets/img/linkedin_grey.svg" alt="">-->
 									</li>
 									<li class="no-margin-top">
-										<p><a href="<?php the_field('linkedin_link'); ?>" target="_blank">LINKEDIN</a></p>
+										<p><!--<a href="<?php the_field('linkedin_link'); ?>" target="_blank">LINKEDIN</a>--></p>
 									</li>
 								</ul>
 							</li>

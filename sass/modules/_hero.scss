@@ -58,9 +58,16 @@
 			text-transform: uppercase;
 			margin: 30px 0 0 0;
 			padding: 0;
-			font-size:90%;
 			font-family: 'Roboto Slab', serif;
 			font-weight: 300 !important;
+		}
+
+		&__small{
+			margin:10px 0 0 0 !important;
+			font-size:12px !important;
+			text-transform: none !important;
+			padding:0 20px !important;
+
 		}
 		
 		.light{
@@ -111,7 +118,7 @@
 	background: #589198;
 
 		img{
-			@extend .transparency;
+			//@extend .transparency;
 		}
 
 		.hero__text{
@@ -200,6 +207,12 @@
 				font-size:34px;
 			}
 
+			&__small{
+				font-size:20px !important;
+				padding:0 140px !important;
+
+			}
+
 			.readmore{
 
 				&__label{
@@ -257,7 +270,7 @@
 			width:900px;
 				
 			p{
-				font-size:43px;
+				font-size:34px;
 				line-height: 130%;
 			}
 		}
@@ -266,7 +279,6 @@
  	.hero__quote{
  		.hero__text{
  			p{
- 				font-size:34px;
  				padding-left:15px;
  			}
 
@@ -305,7 +317,7 @@
 		margin-bottom:50px;
 
 		&__text{
-			width:970px;
+			width:780px;
 		
 		}
  	}

@@ -15,7 +15,7 @@
 			</div>
 			<div class="col-md-12 clearfix">
 				<div class="clients__text">
-					<p>Hvor mødet med andre virksomheder og organisationsformer er en garanti for bæredygtige ideer og ny inspiration som grundlag for udvikling når det handler om mennesker</p>
+					<p>Når mødet med andre kan skabe bæredygtige ideer og ny inspiration som grudlag for egen udvikling</p>
 				</div>
 			</div>
 		</div>

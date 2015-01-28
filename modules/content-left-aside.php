@@ -40,7 +40,7 @@
 								<li class="linkedin ">
 									<ul>
 										<li class="icon no-margin-top">
-											<img src="<?php bloginfo('template_directory')?>/dist/img/linkedin_grey.svg" alt="">
+											<img src="<?php bloginfo('template_directory')?>/assets/img/linkedin_grey.svg" alt="">
 										</li>
 										<li class="no-margin-top">
 											<a href="<?php the_field('linkedin_link'); ?>" target="_blank">linkedin</a>

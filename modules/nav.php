@@ -12,14 +12,12 @@
 				        <span class="icon-bar"></span>
 				      </button>
 				     
-				      	<a href="<?php echo get_option('home'); ?>/" class="navbar-brand"><img src="<?php bloginfo('template_directory')?>/assets/img/logo.svg" alt=""></a>
+				      	<a href="<?php echo get_option('home'); ?>/" class="navbar-brand"><img src="<?php bloginfo('template_directory')?>/assets/img/CCN_logo.png" alt=""></a>
 				     
 				    </div>
 
 				    <!-- Collect the nav links, forms, and other content for toggling -->
 				    <div class="collapse navbar-collapse" id="main-nav">
-				   
-
 
 				        	<?php wp_nav_menu(array('menu' => 'main_nav', 'menu_class' => 'nav navbar-nav',)); ?>
 				      				    </div><!-- /.navbar-collapse -->

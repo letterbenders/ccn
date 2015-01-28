@@ -7,7 +7,7 @@
 				 	<li>
 				 		<ul>
 				 			<li>
-				 				<p class="label">Stilling:</p>
+				 				<p class="green">Stilling:</p>
 				 			</li>
 				 			<li>
 				 				<p><?php the_field('cv_title'); ?></p>
@@ -17,7 +17,7 @@
 				 	<li>
 				 		<ul>
 				 			<li>
-				 				<p class="label">Født:</p>
+				 				<p class="green">Født:</p>
 				 			</li>
 				 			<li>
 				 				<p><?php the_field('born'); ?></p>

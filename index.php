@@ -1,7 +1,5 @@
 <?php get_header(); ?>
 
-<?php include 'modules/hero-empty.php' ?>
-
 <?php include 'modules/masonry-news.php' ?>
 
 <?php include 'modules/page-line.php' ?>

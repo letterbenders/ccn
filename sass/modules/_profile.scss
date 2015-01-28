@@ -44,8 +44,16 @@
 			margin: 0;
 			max-height: 320px;
 			overflow: hidden;
+			position:relative;
+			height:250px;
+			
 
 			img{
+				position:absolute;
+				top:50%;
+				transform:translateY(-50%);
+				-webkit-transform:translateY(-50%);
+
 
 			}
 		}
@@ -56,7 +64,6 @@
 
 			.list__contact__profile{
 				@include vertical-align;
-
 			}
 		}
 
@@ -75,6 +82,13 @@
 			.contact{
 				height:248px;
 			}
+
+			.image{
+				height:248px;
+					img{
+						height:auto;
+					}
+			}
 		}
 	}
 }
@@ -87,6 +101,13 @@
 
 			.contact{
 				height:320px;
+			}
+
+			.image{
+				height:320px;
+					img{
+						height:auto;
+					}
 			}
 		}
 	}

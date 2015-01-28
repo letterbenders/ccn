@@ -28,13 +28,13 @@
 					<?php while (have_posts()) : the_post(); ?>
 						
 						<div class="masonry__item item">
-							<a href="<?php the_permalink(); ?>"><img src="<?php the_field('post_image'); ?>" alt=""></a>
+							<img src="<?php the_field('post_image'); ?>" alt="">
 						  	<div class="masonry__item__content">
-						  		<a href="<?php the_permalink(); ?>"><h5><?php the_title(); ?></h5></a>
+						  		<h5><?php the_title(); ?></h5>
 								<p class="author-date"><?php the_time(__('d.m.Y')) ?> af <?php the_field('author'); ?></p>
 							  	<hr>
 								<p class="excerpt"><?php the_excerpt(); ?></p>	
-						  		<a href="<?php the_permalink(); ?>">Læs mere</a>
+						  		<a href="../?page_id=20">Kontakt</a>
 						  	</div>
 						</div><!-- /masonry__item -->
 					<?php endwhile; ?>

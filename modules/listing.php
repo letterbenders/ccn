@@ -30,14 +30,22 @@
 											<div class="col-md-6">
 												<ul class="list__social">
 													<li class="linkedin">
-														<a href="<?php the_sub_field('item_linkedin_url'); ?>" target="_blank">Linkedin</a>
+														<?php
+
+															if(get_sub_field('item_linkedin_url'))
+															{
+															echo '<a href="' . get_field('item_linkedin_url')  . ' target="_blank">Linkedin</a>';
+															}
+
+														?>
+														<!--<a href="<?php the_sub_field('item_linkedin_url'); ?>" target="_blank">Linkedin</a>-->
 													</li>
-													<li class="twitter">
+													<!--<li class="twitter">
 														<a href="<?php the_sub_field('item_twitter_url'); ?>" target="_blank">Twitter</a>
 													</li>
 													<li class="skype">
 														<a href="<?php the_sub_field('item_skype_url'); ?>" target="_blank">Skype</a>
-													</li>
+													</li>-->
 												</ul>
 											</div>
 										</div><!-- /contact -->
@@ -91,12 +99,12 @@
 													<li class="linkedin">
 														<a href="<?php the_sub_field('item_linkedin_url_2'); ?>" target="_blank">Linkedin</a>
 													</li>
-													<li class="twitter">
+													<!--<li class="twitter">
 														<a href="<?php the_sub_field('item_twitter_url_2'); ?>" target="_blank">Twitter</a>
 													</li>
 													<li class="skype">
 														<a href="<?php the_sub_field('item_skype_url_2'); ?>" target="_blank">Skype</a>
-													</li>
+													</li>-->
 												</ul>
 											</div>
 										</div><!-- /contact -->

@@ -6,8 +6,8 @@
 		<div class="hero__text">
 			<p><?php the_field('hero_divider_text'); ?></p>
 
-			<?php if( get_field('quote_author') ): ?>
-				<p class="client__quote"><?php the_field('quote_author'); ?></p>
+			<?php if( get_field('quote_forfatter') ): ?>
+				<p class="client__quote"><?php the_field('quote_forfatter'); ?></p>
 			<?php endif; ?>
 
 			<?php if( get_field('quote_link') ): ?>

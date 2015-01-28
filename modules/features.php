@@ -6,7 +6,7 @@
 					<?php include 'hero-transparent.php' ?>
 				</div>
 				<div class="col-md-6 col">
-					<h4 class="uppercase"><?php the_field('feature_header'); ?></h4>
+					<h4 class="uppercase no-margin-top"><?php the_field('feature_header'); ?></h4>
 					<p><?php the_field('feature_text'); ?></p>
 					<a href="<?php the_field('feature_link'); ?>" class="readmore"><span class="readmore__label">Læs mere</span></a>
 				</div>

@@ -99,7 +99,7 @@
 	// Excerpt length
 
 	function new_excerpt_length($length) { 	
-		return 32; } add_filter('excerpt_length', 'new_excerpt_length'
+		return 100; } add_filter('excerpt_length', 'new_excerpt_length'
 	);
 
 	function new_excerpt_more($more) {
